@@ -1,0 +1,10 @@
+
+CRUD con NCapas C# y SQL - Insertar, Mostrar, Editar y Eliminar datos (POO) RV2
+https://www.youtube.com/watch?v=_H8vswpMSOw&t=658s
+
+(T1) Insertar y Mostrar Datos con Tablas Relacionadas SQL y C# (Combobox, Inner Join)NCapas
+https://www.youtube.com/watch?v=wMgfmNdxNsw
+
+(T2) Editar y eliminar Datos con Tablas Relacionadas SQL C# \POO NCapas(Combobox, Inner Join)
+https://www.youtube.com/watch?v=Z6D02LVQX5M&t=16s
+

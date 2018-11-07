@@ -1,0 +1,13 @@
+D:\10.Portafolio\prjWin_MVC_ComboBox_selector_Rm\2.View\bin\Debug\2.View.exe.config
+D:\10.Portafolio\prjWin_MVC_ComboBox_selector_Rm\2.View\bin\Debug\2.View.exe
+D:\10.Portafolio\prjWin_MVC_ComboBox_selector_Rm\2.View\bin\Debug\2.View.pdb
+D:\10.Portafolio\prjWin_MVC_ComboBox_selector_Rm\2.View\bin\Debug\3.Controller.dll
+D:\10.Portafolio\prjWin_MVC_ComboBox_selector_Rm\2.View\bin\Debug\1.Model.dll
+D:\10.Portafolio\prjWin_MVC_ComboBox_selector_Rm\2.View\bin\Debug\3.Controller.pdb
+D:\10.Portafolio\prjWin_MVC_ComboBox_selector_Rm\2.View\bin\Debug\1.Model.pdb
+D:\10.Portafolio\prjWin_MVC_ComboBox_selector_Rm\2.View\obj\Debug\2.View.csprojResolveAssemblyReference.cache
+D:\10.Portafolio\prjWin_MVC_ComboBox_selector_Rm\2.View\obj\Debug\_2.View.Properties.Resources.resources
+D:\10.Portafolio\prjWin_MVC_ComboBox_selector_Rm\2.View\obj\Debug\2.View.csproj.GenerateResource.Cache
+D:\10.Portafolio\prjWin_MVC_ComboBox_selector_Rm\2.View\obj\Debug\2.View.exe
+D:\10.Portafolio\prjWin_MVC_ComboBox_selector_Rm\2.View\obj\Debug\2.View.pdb
+D:\10.Portafolio\prjWin_MVC_ComboBox_selector_Rm\2.View\obj\Debug\_2.View.MVC_CRUD.resources

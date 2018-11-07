@@ -1,0 +1,7 @@
+D:\10.Portafolio\prjWin_MVC_ComboBox_selector_Rm\3.Controller\bin\Debug\3.Controller.dll
+D:\10.Portafolio\prjWin_MVC_ComboBox_selector_Rm\3.Controller\bin\Debug\3.Controller.pdb
+D:\10.Portafolio\prjWin_MVC_ComboBox_selector_Rm\3.Controller\bin\Debug\1.Model.dll
+D:\10.Portafolio\prjWin_MVC_ComboBox_selector_Rm\3.Controller\bin\Debug\1.Model.pdb
+D:\10.Portafolio\prjWin_MVC_ComboBox_selector_Rm\3.Controller\obj\Debug\3.Controller.csprojResolveAssemblyReference.cache
+D:\10.Portafolio\prjWin_MVC_ComboBox_selector_Rm\3.Controller\obj\Debug\3.Controller.dll
+D:\10.Portafolio\prjWin_MVC_ComboBox_selector_Rm\3.Controller\obj\Debug\3.Controller.pdb
