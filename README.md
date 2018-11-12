@@ -8,13 +8,36 @@ The objective : Implementing Basic CRUD Functionality.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
 This project focus in the MVC philosophy.
 
 ![MVC](/img/MVCmodel.JPG "MVC")
 
 [Understanding MVC architecture](https://www.youtube.com/watch?v=eTdVkgF_Slo)
+
+
+[Dowland the MVC_ComboBox_selector project](https://github.com/RicardoAMendoza/MVC_winapp_ComboBox_selector)
+
+
+# SQL (Database)
+
+Create the database with SQl server. 
+
+1.- Open SQL Server Management Studio, open a new query and run Init_DataBase.sql
+
+- Path : *MVC_winapp_ComboBox_selector/sql/Init_DataBase.sql*
+
+2.- Fill up the tables, run dataTables.sql
+
+- Path : *MVC_winapp_ComboBox_selector/sql/dataTables.sql*
+
+3.- The class clsConnection conects the SQL Server and the Visual Studio
+
+```
+ static private string stringConnection = "Data Source = .; DataBase = bd_aspcrud_examen; Integrated Security = true";
+ ```
+
+https://www.youtube.com/watch?v=OdDkFPO_nto
+
 
 ### Prerequisites
 

@@ -83,8 +83,6 @@ WHERE idagencies=@aidagencies
 END
 GO
 -- ----------------------------------------------------- 
-DROP PROC spserver_save_agencies
-SELECT * FROM tagencies
 
 -- -----------------------------------------------------
 -- 4. PROCEDURE spserver_save_employee
@@ -115,9 +113,6 @@ SET employeeNumber=@aemployeeNumber,name=@aname,lastName=@alastName,email=@aemai
 WHERE idemployee = @aidemployee;
 END 
 GO
-
-DROP PROC spserver_save_employee
-SELECT * FROM temployee
 
 -- -----------------------------------------------------
 -- 5. PROCEDURE spserver_save_client
@@ -155,10 +150,6 @@ WHERE idclient=@aidclient
 END
 GO
 -- -----------------------------------------------------
-EXEC spserver_save_client
-DROP PROC spserver_save_client
-SELECT * FROM tclient
-
 
 -- -----------------------------------------------------
 -- 6. Select employees
@@ -177,8 +168,6 @@ from temployee a order by employeeNumber
 END
 GO
 -- -----------------------------------------------------
-DROP PROC selectEmployee
-EXEC selectEmployee
 
 -- -----------------------------------------------------
 -- 7. Select Agencies
@@ -197,8 +186,6 @@ FROM tagencies b ORDER BY name
 END
 GO
 -- -----------------------------------------------------
-DROP PROC selectAgencies
-EXEC selectAgencies
 
 -- -----------------------------------------------------
 -- 8. qclient (view)
@@ -232,8 +219,6 @@ FROM
 tclient	 a inner join tagencies b on a.idagencies=b.idagencies
 inner join temployee c on a.idemployee=c.idemployee
 -- -----------------------------------------------------
-DROP VIEW qclient
-SELECT * FROM qclient
 
 -- -----------------------------------------------------
 -- 9. Select qclient (view)
@@ -271,8 +256,6 @@ inner join temployee c on a.idemployee=c.idemployee
 END
 GO
 -- -----------------------------------------------------
-EXEC selectqclient
-DROP PROC selectqclient
 
 -- -----------------------------------------------------
 -- 10. PROCEDURE deleteTclientByid
@@ -330,12 +313,6 @@ WHERE b.name = @aAgency
 END
 GO
 -- -----------------------------------------------------
-DROP PROC selectqclientByAgency
-
-exec selectqclientByAgency @aAgency = 'MontRoyal NB'
-exec selectqclientByAgency @aAgency ='Rosemont NB'
-exec selectqclientByAgency @aAgency ='247 Beaubien'
-exec selectqclientByAgency @aAgency ='Alexander NB'
 
 -- -----------------------------------------------------
 -- 12. PROCEDURE selectqclientByemployeeNumber
@@ -375,12 +352,7 @@ WHERE c.employeeNumber = @aemployeeNummber
 END
 GO
 -- -----------------------------------------------------
-DROP PROC selectqclientByemployeeNumber
 
-exec selectqclientByemployeeNumber @aemployeeNummber = 'E1E1'
-exec selectqclientByemployeeNumber @aemployeeNummber ='E3E3'
-exec selectqclientByemployeeNumber @aemployeeNummber ='E8E8'
-exec selectqclientByemployeeNumber @aemployeeNummber ='E11E11'
 
 
 
