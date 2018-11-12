@@ -35,7 +35,7 @@ Create the database with SQl server.
 
 [MVC_winapp_ComboBox_selector/sql/dataTables.sql](https://github.com/RicardoAMendoza/MVC_winapp_ComboBox_selector/blob/master/sql/Init_DataBase.sql)
 
-3.- The class clsConnection conects the SQL Server and the Visual Studio
+3.- The class clsConnection connects the SQL Server and the Visual Studio
 
 ```
 static private string stringConnection = "Data Source = .; DataBase = bd_aspcrud_examen; Integrated Security = true";
@@ -56,7 +56,7 @@ static private string stringConnection = "Data Source = .; DataBase = bd_aspcrud
 
 ![Select by Employee or Agency](/img/select.jpg "Select by employee or agency")
 
-![Select By Row](/img/select.jpg.JPG "Select by row")
+![Select By Row](/img/select.jpg "Select by row")
 
 
 ## Built With
@@ -72,7 +72,7 @@ static private string stringConnection = "Data Source = .; DataBase = bd_aspcrud
 
 This project uses GitHub.com as source manager in the following repository:
 
-[Ricardo Mendoza](git remote add origin https://github.com/RicardoAMendoza/MVC_winapp_ComboBox_selector.git)
+https://github.com/RicardoAMendoza/MVC_winapp_ComboBox_selector.git
 
 
 ## License
