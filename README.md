@@ -1,19 +1,20 @@
 # MVC_ComboBox_selector
 
-## prjWin_MVC_ComboBox_selector_Rm
+Building a CRUD (create, read, update, delete) code with the MVC (model, view, controller) philosophy in  C # .NET Focusing in the selector ComboBox control
+
 Fall-2018
 
 The objective : Implementing Basic CRUD Functionality.
 
-
-## Getting started
-
-Introduction to the relation between a SQL Server database and the C# programming language.
-
-
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+
+This project focus in the MVC philosophy.
+
+![MVC](/img/MVCmodel.JPG "MVC")
+
+[Understanding MVC architecture](https://www.youtube.com/watch?v=eTdVkgF_Slo)
 
 ### Prerequisites
 
