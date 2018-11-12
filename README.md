@@ -52,11 +52,19 @@ static private string stringConnection = "Data Source = .; DataBase = bd_aspcrud
 
 ## Running the tests
 
+Inteface loads the grid when it starts.
+
 ![INIT](/img/init.jpg "Init")
+
+We can select a client by combo box Employee or combo box Agencies.
 
 ![Select by Employee or Agency](/img/select.jpg "Select by employee or agency")
 
-![Select By Row](/img/select.jpg "Select by row")
+We can select a row and loads the texts boxes then we can update a clietn.
+
+![Select By Row](/img/byRow.jpg "Select by row")
+
+Save and update are executed with the same button.
 
 
 ## Built With
