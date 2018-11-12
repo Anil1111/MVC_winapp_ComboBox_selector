@@ -3,12 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms; // MessageBox
 // Data
 using System.Data;
 using _1.Model; // Handles data
-
-// MessageBox
-using System.Windows.Forms;
 
 namespace _3.Controller
 {

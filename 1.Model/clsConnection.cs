@@ -3,11 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;// Message Box
 // Data
 using System.Data;
 using System.Data.SqlClient;
-// Message Box
-using System.Windows.Forms;
 
 namespace _1.Model
 {
