@@ -11,6 +11,12 @@ using _3.Controller;  // Handles decisions
 
 namespace _2.View
 {
+    /*
+     * This project uses the following licenses:
+     *  MIT License
+     *  Copyright (c) 2018 Ricardo Mendoza 
+     *  Montréal Québec Canada
+    */
     public partial class MVC_CRUD : Form
     {
         // static variables agency
@@ -41,12 +47,13 @@ namespace _2.View
             // Init static variables
             stringdbaseagency = null;
             stringcmboxagency = null;
-
             stringdbaseemployee = null;
             stringcmboxemployee = null;
-
         }
 
+        /// <summary>
+        /// 1. Loads Employees in the combo box employees
+        /// </summary>
         private void ListEmployees()
         {
             // new Controller cleans the object everytime it is called
@@ -57,6 +64,9 @@ namespace _2.View
             cmbEmployees.ValueMember = "idEmployee";
         }
 
+        /// <summary>
+        /// 2. Loads Agencies in the combo box agencies
+        /// </summary>
         private void ListAgencies()
         {
             // new Controller cleans the object everytime it is called
@@ -65,11 +75,10 @@ namespace _2.View
             cmbAgencies.DataSource = Controller.AgenciesList();
             cmbAgencies.DisplayMember = "Agency";
             cmbAgencies.ValueMember = "idagencies";
-            
         }
 
         /// <summary>
-        /// 1. Loads the info client in to the dataGridView
+        /// 3. Loads the info client in to the dataGridView
         /// </summary>
         private void DisplayClients()
         {
@@ -80,7 +89,7 @@ namespace _2.View
         }
 
         /// <summary>
-        /// 2. Select the info client from each row in the dataGridView
+        /// 4. Select the info client from each row in the dataGridView
         /// </summary>
         private void gvClient_CellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -118,7 +127,7 @@ namespace _2.View
         }
 
         /// <summary>
-        /// 3. Save or update the info client in to the data base
+        /// 5. Save or update the info client in the data base
         /// </summary>
         private void btnSave_Click(object sender, EventArgs e)
         {
@@ -137,10 +146,9 @@ namespace _2.View
                 string idagencies = cmbAgencies.SelectedValue.ToString();
                 string idemployee = cmbEmployees.SelectedValue.ToString();
                 string sexe = txtsexe.Text.Trim();
-
-    
+                // 2. Obj Controller
                 clsInfo Controller = new clsInfo();
-                // 2. Save or update client info
+                // 3. Save or update client info
                 Controller.SaveClient(idclient, clientNumber, name, lastName, email, img, address, cardNumber, nip, idagencies, idemployee, sexe);
                 if (idclient != "0")
                 {
@@ -162,7 +170,7 @@ namespace _2.View
         }
 
         /// <summary>
-        /// 4. Delete the info client in to the data base
+        /// 6. Delete the info client in to the data base
         /// </summary>
         private void btnDelete_Click(object sender, EventArgs e)
         {
@@ -171,14 +179,15 @@ namespace _2.View
             
             try
             {
+                // 2. Obj Controller
                 clsInfo Controller = new clsInfo();
-                // 2. Deleteclient info
+                // 3. Deleteclient info
                 Controller.DeleteClient(idclient);
-                // 3. Loads the info client in to the dataGridView
+                // 4. Loads the info client in to the dataGridView
                 DisplayClients();
-                // 4. cleaan the text boxes 
+                // 5. cleaan the text boxes 
                 CleanTextboxes();
-                // 5. Message
+                // 6. Message
                 MessageBox.Show("Msg : " + " " + " client has been deleted");
             }
             catch (Exception ex)
@@ -187,6 +196,9 @@ namespace _2.View
             }
         }
      
+        /// <summary>
+        /// 7. Loads the grid view with combo box agency selector
+        /// </summary>
         private void cmbAgencies_SelectedIndexChanged(object sender, EventArgs e)
         {
             try
@@ -205,6 +217,9 @@ namespace _2.View
             }
         }
 
+        /// <summary>
+        /// 8. Loads the grid view with combo box employee selector
+        /// </summary>
         private void cmbEmployees_SelectedIndexChanged(object sender, EventArgs e)
         {
             try
@@ -223,18 +238,19 @@ namespace _2.View
         }
 
         /// <summary>
-        /// 5. cleaan the text boxes 
+        /// 9. cleaan the text boxes 
         /// </summary>
         private void btnClear_Click(object sender, EventArgs e)
         {
             CleanTextboxes();
             // Load data grid view
             DisplayClients();
+            // btnRefresh to btnRefresh
             btnRefresh.Text = "Refresh >>>";
         }
 
         /// <summary>
-        /// 6. cleaan the text boxes 
+        /// 10. cleaan the text boxes 
         /// </summary>
         public void CleanTextboxes()
         {
@@ -254,5 +270,5 @@ namespace _2.View
             btnSave.Text = "Save >>>";
             btnDelete.Enabled = false;
         }
-    }
+    } // end class
 }

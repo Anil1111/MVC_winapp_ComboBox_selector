@@ -1,3 +1,8 @@
+-- This project uses the following licenses:
+-- MIT License
+-- Copyright (c) 2018 Ricardo Mendoza 
+-- Montréal Québec Canada
+
 -- -----------------------------------------------------
 -- 1. Data base bd_aspcrud_examen
 -- -----------------------------------------------------

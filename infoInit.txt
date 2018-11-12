@@ -1,3 +1,8 @@
+-- This project uses the following licenses:
+-- MIT License
+-- Copyright (c) 2018 Ricardo Mendoza 
+-- Montréal Québec Canada
+
 1. create repository in GitHub : MVC_winapp_ComboBox_selector
 Description - Implementing CRUD Functionality : We will review and customize the create, read, update, delete (CRUD) code and the Model, View, Controller (MVC) philosophy in  C # .NET application. Focusing in the selector ComboBox control
 2. create file : prjWin_MVC_ComboBox_selector_Rm
@@ -6,5 +11,5 @@ Description - Implementing CRUD Functionality : We will review and customize the
    git init
 5. git add README.md
 6. git commit -m "first commit"
-7. git remote add origin git remote add origin https://github.com/RicardoAMendoza/MVC_winapp_ComboBox_selector.git
+7. git remote add origin https://github.com/RicardoAMendoza/MVC_winapp_ComboBox_selector.git
 8. git push -u origin master

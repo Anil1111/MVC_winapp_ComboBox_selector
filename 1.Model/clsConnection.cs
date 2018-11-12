@@ -11,6 +11,12 @@ using System.Windows.Forms;
 
 namespace _1.Model
 {
+    /*
+    * This project uses the following licenses:
+    *  MIT License
+    *  Copyright (c) 2018 Ricardo Mendoza 
+    *  Montréal Québec Canada
+   */
     public class clsConnection
     {
         // Error 40: Could not open a connection to SQL Server fixed with  http://msdn.microsoft.com/en-us/library/ms174212.aspx

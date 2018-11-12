@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -80,20 +80,8 @@ namespace _3.Controller
             int IDclient = Convert.ToInt32(idclient);
             int IDagencies = Convert.ToInt32(idagencies);
             int IDemployee = Convert.ToInt32(idemployee);
-            // 2. Save or update in the Model layer POO
-            Model.vdclient = IDclient;
-            Model.vclientNumber = clientNumber;
-            Model.vname = name;
-            Model.vlastName = lastName;
-            Model.vemail = email;
-            Model.vimg = img;
-            Model.vaddress = address;
-            Model.vcardNumber = cardNumber;
-            Model.vnip = nip;
-            Model.vidagencies = IDagencies;
-            Model.videmployee = IDemployee;
-            Model.vsexe = sexe;
-            Model.Save();
+            // 2. Save or update in the Model layer
+            Model.Save(IDclient, clientNumber, name, lastName, email, img, address, cardNumber, nip, IDagencies, IDemployee,sexe);
         }
 
         /// <summary>
@@ -110,9 +98,7 @@ namespace _3.Controller
                 // 1. Convert data
                 int IDclient = Convert.ToInt32(idclient);
                 // 2. Delete in the model layer
-                Model.vdclient = IDclient;
-                // POO
-                Model.Delete();
+                Model.Delete(IDclient);
             }
             catch (Exception ex)
             {
@@ -129,8 +115,7 @@ namespace _3.Controller
             try
             {
                 // 1. The reader
-                Model.vagencyName = agencyName;
-                string reader = Model.ReaderAgency();
+                string reader = Model.ReaderAgency(agencyName);
                 // 2. Make return
                 return reader;
             }
@@ -150,8 +135,7 @@ namespace _3.Controller
             // 1. Obj DataTable
             DataTable Table = new DataTable();
             // 2. Info client by Agency in Table Object
-            Model.vagencyName = agencyName;
-            Table = Model.selectqclientByAgency();
+            Table = Model.selectqclientByAgency(agencyName);
             // 3. Make return
             return Table;
         }
@@ -166,8 +150,7 @@ namespace _3.Controller
             try
             {
                 // 1. The reader
-                Model.vemployeeNummber = employeeNummber;
-                string reader = Model.ReaderEmployee();
+                string reader = Model.ReaderEmployee(employeeNummber);
                 // 2. Make return
                 return reader;
             }
@@ -187,8 +170,7 @@ namespace _3.Controller
             // 1. Obj DataTable
             DataTable Table = new DataTable();
             // 2. Info client by Agency in Table Object
-            Model.vemployeeNummber = employeeNummber;
-            Table = Model.selectqclientByemployeeNumber();
+            Table = Model.selectqclientByemployeeNumber(employeeNummber);
             // 3. Make return
             return Table;
         }

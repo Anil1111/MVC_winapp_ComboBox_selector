@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -27,179 +27,6 @@ namespace _1.Model
         private SqlCommand Command = new SqlCommand();
         // 3 . Read Rows
         private SqlDataReader Read;
-
-        /// <summary>
-        /// ATTRIBUTES
-        /// </summary>
-        private int idclient;
-        private string clientNumber;
-        private string name;
-        private string lastName;
-        private string email;
-        private string img;
-        private string address;
-        private string cardNumber;
-        private string nip;
-        private int idagencies;
-        private int idemployee;
-        private string sexe;
-
-        private string agencyName;
-        private string employeeNummber;
-
-        /// <summary>
-        /// CONSTRUCTOR EMPTY.
-        /// </summary>
-        public clsDataSource()
-        { }
-        /// <summary>
-        /// CONTRUCTOR 12 ARGUMENTS.
-        /// </summary>
-        public clsDataSource(string vagencyName, string vemployeeNummber, int vidclient, string vclientNumber, string vname, string vlastName, string vemail, string vimg, string vaddress, string vcardNumber, string vnip, int vidagencies, int videmployee, string vsexe)
-        {
-            idclient = vidclient;
-            clientNumber = vclientNumber;
-            name =vname;
-            lastName=vlastName;
-            email=vemail;
-            img=vimg;
-            address=vaddress;
-            cardNumber=vcardNumber;
-            nip=vnip;
-            idagencies=vidagencies;
-            idemployee=videmployee;
-            sexe=vsexe;
-        }
-
-        /// <summary>
-        /// PROPERTIES.
-        /// </summary>
-        public int vdclient
-        {
-            get
-            { return idclient; }
-
-            set
-            { idclient = value; }
-        }
-
-        public string vclientNumber
-        {
-            get
-            { return clientNumber; }
-
-            set
-            { clientNumber = value; }
-        }
-
-        public string vname
-        {
-            get
-            {return name;}
-
-            set
-            { name = value;}
-        }
-
-        public string vlastName
-        {
-            get
-            {return lastName;}
-
-            set
-            { lastName = value; }
-        }
-
-        public string vemail
-        {
-            get
-            { return email; }
-
-            set
-            { email = value; }
-        }
-
-        public string vimg
-        {
-            get
-            { return img; }
-
-            set
-            { img = value; }
-        }
-
-        public string vaddress
-        {
-            get
-            { return address; }
-
-            set
-            { address = value; }
-        }
-
-        public string vcardNumber
-        {
-            get
-            { return cardNumber; }
-
-            set
-            {cardNumber = value; }
-        }
-
-        public string vnip
-        {
-            get
-            { return nip;}
-
-            set
-            { nip = value; }
-        }
-
-        public int vidagencies
-        {
-            get
-            {return idagencies; }
-
-            set
-            { idagencies = value;}
-        }
-
-        public int videmployee
-        {
-            get
-            {return idemployee; }
-
-            set
-            { idemployee = value; }
-        }
-
-        public string vsexe
-        {
-            get
-            { return sexe;}
-
-            set
-            {sexe = value;}
-        }
-
-        public string vagencyName
-        {
-            get
-            { return agencyName; }
-
-            set
-            { agencyName = value; }
-        }
-
-        public string vemployeeNummber
-        {
-            get
-            {return employeeNummber; }
-
-            set
-            { employeeNummber = value;}
-        }
-
 
         /// <summary>
         /// 4. fnc.Load employee in the combo box employee
@@ -298,9 +125,9 @@ namespace _1.Model
         }
 
         /// <summary>
-        /// 7. fnc.save client in the data base with POO
+        /// 7. fnc.save client in the data base
         /// </summary>
-        public void Save()
+        public void Save(int idclient, string clientNumber, string name, string lastName, string email, string img, string address, string cardNumber, string nip, int idagencies, int idemployee, string sexe)
         {
             try
             {
@@ -335,9 +162,9 @@ namespace _1.Model
         }
 
         /// <summary>
-        /// 8. fnc.delete client from the data base with POO
+        /// 8. fnc.delete client from the data base
         /// </summary>
-        public void Delete()
+        public void Delete(int idclient)
         {
             try
             {
@@ -364,7 +191,7 @@ namespace _1.Model
         /// 9. fnc.select a string from tclient by Agency in the data base
         /// </summary>
         /// <returns>string reader</returns>
-        public string ReaderAgency()
+        public string ReaderAgency(string agencyName)
         {
             try
             {
@@ -408,7 +235,7 @@ namespace _1.Model
         /// 10. fnc.select client from tclient by Agency in the data base
         /// </summary>
         /// <returns> DataTable Table</returns>
-        public DataTable selectqclientByAgency()
+        public DataTable selectqclientByAgency(string agencyName)
         {
             try
             {
@@ -442,7 +269,7 @@ namespace _1.Model
         /// 11. fnc.select a string from tclient by Employee Number in the data base
         /// </summary>
         /// <returns>string reader</returns>
-        public string ReaderEmployee()
+        public string ReaderEmployee(string employeeNummber)
         {
             try
             {
@@ -486,7 +313,7 @@ namespace _1.Model
         /// 12. fnc.select client from tclient by Employee Number in the data base
         /// </summary>
         /// <returns> DataTable Table</returns>
-        public DataTable selectqclientByemployeeNumber()
+        public DataTable selectqclientByemployeeNumber(string employeeNummber)
         {
             try
             {
