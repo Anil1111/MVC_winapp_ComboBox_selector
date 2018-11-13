@@ -92,6 +92,9 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
+* Andy Del Risco - Mentor
+* Technicien Informatique Cl. Principale* 
+**École des métiers de l’aérospatiale de Montréal**
 * Jesvin Ciril Joachim - MVC
 * RJ Code Advance - CRUD
 * Derek Banas - SQL Server and Visual Studio installation
