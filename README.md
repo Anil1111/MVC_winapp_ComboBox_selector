@@ -25,7 +25,7 @@ This project focus in the MVC philosophy.
 [Dowland the MVC_ComboBox_selector project](https://github.com/RicardoAMendoza/MVC_winapp_ComboBox_selector)
 
 
-Create the database with SQl server. 
+### Create the database with SQl server. 
 
 1.- Open SQL Server Management Studio, open a new query and run Init_DataBase.sql
 
