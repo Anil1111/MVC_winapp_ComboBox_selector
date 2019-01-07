@@ -16,12 +16,12 @@ Building a CRUD (create, read, update, delete) code with the MVC (model, view, c
 
 ### Prerequisites
 
- * Visual Studio.
- * Object-oriented programming.
+ * Microsoft Visual Studio Community 2015 Version 14.0.25425.01 Update 3
  * Programming language : C#.
- * SQL server Management Studio.
- * Programming language SQL.
- * MVC.
+ * Object Oriented Programming.
+ * SQL server Management Studio v17.9.
+ * Programming language : SQL Server.
+ * MVC Concepts.
 
  #### Videos
  
