@@ -1,16 +1,27 @@
-# MVC_ComboBox_selector
+# MVC_winapp_ComboBox_selector
 
-Building a CRUD (create, read, update, delete) code with the MVC (model, view, controller) philosophy in  C # .NET Focusing in the selector ComboBox control
+### Project name : prjWin_MVC_ComboBox_selector_Rm
 
 Fall-2018
 
-The objective : Implementing Basic CRUD Functionality.
+## Description
 
-## Getting Started
+Objective : Implementing Basic CRUD Functionality.
 
-This project focus in the MVC philosophy.
+Building a CRUD (create, read, update, delete) code with the MVC (model, view, controller) philosophy in  C # .NET Focusing in the selector ComboBox control
+
+### This project focus in the MVC philosophy.
 
 ![MVC](/img/MVCmodel.JPG "MVC")
+
+### Prerequisites
+
+ * Visual Studio.
+ * Object-oriented programming.
+ * Programming language : C#.
+ * SQL server Management Studio.
+ * Programming language SQL.
+ * MVC.
 
 [Understanding MVC architecture](https://www.youtube.com/watch?v=eTdVkgF_Slo)
 
@@ -24,6 +35,7 @@ This project focus in the MVC philosophy.
 
 [Dowland the MVC_ComboBox_selector project](https://github.com/RicardoAMendoza/MVC_winapp_ComboBox_selector)
 
+##Installation
 
 ### Create the database with SQl server. 
 
@@ -41,14 +53,9 @@ This project focus in the MVC philosophy.
 static private string stringConnection = "Data Source = .; DataBase = bd_aspcrud_examen; Integrated Security = true";
 ```
 
-### Prerequisites
+## Author
 
- * Visual Studio.
- * Object-oriented programming.
- * Programming language : C#.
- * SQL server Management Studio.
- * Programming language SQL.
- * MVC.
+* **Ricardo Mendoza -  Programmer Analyst**
 
 ## Running the tests
 
@@ -72,10 +79,6 @@ Save and update are executed with the same button.
 * [SQL Server](https://www.microsoft.com/en-ca/sql-server/sql-server-downloads) - SQL Server
 * [Visual Studio](https://visualstudio.microsoft.com/) - Visual Studio
 
-## Author
-
-* **Ricardo Mendoza Analyst programmer**
-
 ## Versions and source manager. 
 
 This project uses GitHub.com as source manager in the following repository:
@@ -93,6 +96,8 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## Acknowledgments
 
 * Andy Del Risco - MENTOR, *Technicien Informatique Cl. Principale* [École des métiers de l’aérospatiale de Montréal](http://ecole-metiers-aerospatiale.csdm.ca/)
+* Fernand Tonye [Fernand Tonye](https://www.linkedin.com/in/fernand-tonye-6a46532b/) - MENTOR, *Chief d'Equipe Informatique pour les enseignants* [Institut Teccart](http://www.teccart.qc.ca/)
+* Charles Vilaisak [Charles Vilaisak](https://www.linkedin.com/in/cvilaisak/) - MENTOR, *Registraire à l'École nationale de cirque* [École nationale de cirque](https://www.linkedin.com/school/-cole-nationale-de-cirque/)
 * Jesvin Ciril Joachim - MVC
 * RJ Code Advance - CRUD
 * Derek Banas - SQL Server and Visual Studio Installation

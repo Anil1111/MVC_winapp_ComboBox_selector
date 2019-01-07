@@ -209,7 +209,7 @@ namespace _1.Model
         {
             try
             {
-                // 1. Store query rows
+                // 1. Object DataTable
                 DataTable Table = new DataTable();
                 // 2. Execute open connection
                 Command.Connection = Connection.OpenConnection();
@@ -420,15 +420,15 @@ namespace _1.Model
                 Command.CommandText = "selectqclientByAgency";
                 // 4. Execute specify teh command type
                 Command.CommandType = CommandType.StoredProcedure;
-                // 4. Execute parameter
+                // 5. Execute parameter
                 Command.Parameters.AddWithValue("@aAgency", agencyName);
-                // 5. Excute read the rows from stored procedure
+                // 6. Excute read the rows from stored procedure
                 Read = Command.ExecuteReader(); // to read rows - return rows
-                // 6. Load the table
+                // 7. Load the table
                 Table.Load(Read);
-                // 7. Close connection
+                // 8. Close connection
                 Connection.CloseConnection();
-                // 8. Make return
+                // 9. Make return
                 return Table;
             }
             catch (Exception ex)
