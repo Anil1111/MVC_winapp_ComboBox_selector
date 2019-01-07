@@ -30,24 +30,38 @@ Building a CRUD (create, read, update, delete) code with the MVC (model, view, c
  * [CRUD with MVC](https://www.youtube.com/watch?v=_H8vswpMSOw&t=650s)
  * [Install SQL Server](https://www.microsoft.com/en-ca/sql-server/sql-server-downloads)
  * [Install Visual Studio](https://visualstudio.microsoft.com/)
- * [Dowland the MVC_ComboBox_selector project](https://github.com/RicardoAMendoza/MVC_winapp_ComboBox_selector)
+ 
 
 ## Installation
 
+### Download and install. 
+
+ * [Visual Studio](https://visualstudio.microsoft.com/)
+ * [SQL Server](https://www.microsoft.com/en-ca/sql-server/sql-server-downloads)
+ * [Dowland the MVC_ComboBox_selector project](https://github.com/RicardoAMendoza/MVC_winapp_ComboBox_selector)
+
 ### Create the database with SQl server. 
 
-1.- Open SQL Server Management Studio, open a new query and run Init_DataBase.sql
+1.- Create the data base : open SQL Server Management Studio, open a new query and run SqlServer/1_init_DataBase.sql
 
-[MVC_winapp_ComboBox_selector/sql/Init_DataBase.sql](https://github.com/RicardoAMendoza/MVC_winapp_ComboBox_selector/blob/master/sql/Init_DataBase.sql)
+[MVC_winapp_ComboBox_selector/SqlServer/1_init_DataBase.sql](https://github.com/RicardoAMendoza/MVC_winapp_ComboBox_selector/blob/master/SqlServer/1_init_DataBase.sql)
 
-2.- Fill up the tables, run dataTables.sql
+2.- Create the Stored Procedures : run SqlServer/2_create_StoredProcedures.sql
 
-[MVC_winapp_ComboBox_selector/sql/dataTables.sql](https://github.com/RicardoAMendoza/MVC_winapp_ComboBox_selector/blob/master/sql/Init_DataBase.sql)
+[MVC_winapp_ComboBox_selector/SqlServer/2_create_StoredProcedures.sql](https://github.com/RicardoAMendoza/MVC_winapp_ComboBox_selector/blob/master/SqlServer/2_create_StoredProcedures.sql)
 
-3.- The class clsConnection connects the SQL Server and the Visual Studio
+3.- Fill up the tables : run SqlServer/3_fill_Tables.sql
+
+[MVC_winapp_ComboBox_selector/SqlServer/3_fill_Tables.sql](https://github.com/RicardoAMendoza/MVC_winapp_ComboBox_selector/blob/master/SqlServer/3_fill_Tables.sql)
+
+4.- Create Views : run SqlServer/4_create_Views.sql
+
+[MVC_winapp_ComboBox_selector/SqlServer/4_create_Views.sql](https://github.com/RicardoAMendoza/MVC_winapp_ComboBox_selector/blob/master/SqlServer/4_create_Views.sql)
+
+5.- The class clsConnection connects the SQL Server and the Visual Studio
 
 ```
-static private string stringConnection = "Data Source = .; DataBase = bd_aspcrud_examen; Integrated Security = true";
+static private string stringConnection = "Data Source = .; DataBase = bd_combobox_crud; Integrated Security = true";
 ```
 
 ## Author
@@ -73,8 +87,8 @@ Save and update are executed with the same button.
 
 ## Built With
 
-* [SQL Server](https://www.microsoft.com/en-ca/sql-server/sql-server-downloads) - SQL Server
-* [Visual Studio](https://visualstudio.microsoft.com/) - Visual Studio
+* [Visual Studio](https://visualstudio.microsoft.com/)
+* [SQL Server](https://www.microsoft.com/en-ca/sql-server/sql-server-downloads)
 
 ## Versions and source manager. 
 
