@@ -20,7 +20,7 @@ namespace _1.Model
     {
         // Error 40: Could not open a connection to SQL Server fixed with  http://msdn.microsoft.com/en-us/library/ms174212.aspx
         // in My computer : C:\Windows\SysWOW64\SQLServerManager14.msc
-        static private string stringConnection = "Data Source = .; DataBase = bd_aspcrud_examen; Integrated Security = true";
+        static private string stringConnection = "Data Source = .; DataBase = bd_combobox_crud; Integrated Security = true";
         private SqlConnection MyConnection = new SqlConnection(stringConnection);
 
         // OPEN CONNECTION

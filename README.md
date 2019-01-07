@@ -28,8 +28,8 @@ Building a CRUD (create, read, update, delete) code with the MVC (model, view, c
  * [Understanding MVC architecture](https://www.youtube.com/watch?v=eTdVkgF_Slo)
  * [SQL Server connection](https://www.youtube.com/watch?v=OdDkFPO_nto)
  * [CRUD with MVC](https://www.youtube.com/watch?v=_H8vswpMSOw&t=650s)
- * [Install SQL Server](https://www.microsoft.com/en-ca/sql-server/sql-server-downloads)
  * [Install Visual Studio](https://visualstudio.microsoft.com/)
+ * [Install SQL Server](https://www.microsoft.com/en-ca/sql-server/sql-server-downloads)
  
 
 ## Installation
